@@ -1,0 +1,11 @@
+[Unit]
+Description=Simple http server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hashy
+ExecStop=/usr/bin/killall hashy
+
+[Install]
+WantedBy=multi-user.target

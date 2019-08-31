@@ -1,7 +1,7 @@
 {
   "variables": {
-    "service_name": "primetime",
-    "credentials": "{{env `credentials`}}",
+    "service_name": "hashy",
+    "credentials": "{{env `GOOGLE_CREDENTIALS`}}",
     "project_id": "{{env `project_id`}}"
   },
   "builders": [
