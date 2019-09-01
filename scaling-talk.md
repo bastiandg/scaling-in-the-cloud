@@ -8,6 +8,12 @@
 - cost reduction? probably not
 - immutable infrastructure required
 
+## immutable infrastructure
+
+- Computing infrastructure doesn't change at runtime
+- Operating System images are prebuilt
+
+
 ## Lift and shift
 
 - Migrate legacy VMs/Software with (almost) no modification

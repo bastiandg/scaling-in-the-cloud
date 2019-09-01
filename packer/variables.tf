@@ -18,7 +18,3 @@ variable "source_image" {
 variable "region" {
   type = string
 }
-
-variable "zone" {
-  type = string
-}

@@ -1,2 +1,6 @@
 env.sh
 *credentials*.json
+
+**/.terraform/*
+*.tfstate
+*.tfstate.*
