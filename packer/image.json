@@ -1,6 +1,6 @@
 {
   "variables": {
-    "service_name": "hashy",
+    "service_name": "{{env `service_name`}}",
     "credentials": "{{env `GOOGLE_CREDENTIALS`}}",
     "project_id": "{{env `project_id`}}"
   },
@@ -11,7 +11,7 @@
       "account_file": "{{user `credentials`}}",
       "project_id": "{{user `project_id`}}",
       "source_image_family": "debian-10",
-      "image_name": "packer-test",
+      "image_name": "{{user `service_name`}}",
       "ssh_username": "packer",
       "zone": "europe-west4-b",
       "scopes": [
