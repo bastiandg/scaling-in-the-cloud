@@ -74,7 +74,7 @@ resource "google_compute_region_autoscaler" "autoscaler" {
 
 resource "google_compute_http_health_check" "lb_health_check" {
   name         = "${var.service_name}-health-check"
-  request_path = "/"
+  request_path = "/healthz"
 
   timeout_sec        = 1
   check_interval_sec = 1
