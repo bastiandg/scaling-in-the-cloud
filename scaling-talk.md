@@ -4,15 +4,14 @@
 
 - cloud is not about cost, it is about scaling
 - side effect: acceleration
-<!--TODO point still valid?-->
-- cost reduction? probably not
+- cost reduction? probably not <!--TODO point still valid? If yes elaborate.-->
 - immutable infrastructure required
 
 ## immutable infrastructure
 
 - Computing infrastructure doesn't change at runtime
 - Operating System images are prebuilt
-
+- Separation of storage and computing
 
 ## Lift and shift
 
@@ -64,6 +63,12 @@
 
 - Containerize Service
 - Deploy
+
+## Takeaways
+
+- Don't do lift and shift
+- separate storage from computing
+- Don't use Docker as a light VM
 
 ## Links
 
