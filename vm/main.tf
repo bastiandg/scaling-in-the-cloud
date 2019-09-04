@@ -114,4 +114,7 @@ resource "google_compute_url_map" "url_map" {
   default_service = google_compute_backend_service.backend_service.self_link
 }
 
-
+output "vm_lb_ip_address" {
+  description = "IP address of the loadbalancer for the managed instance group"
+  value       = google_compute_global_address.external_ip.address
+}
