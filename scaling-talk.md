@@ -45,6 +45,8 @@
 - Scaling unit: pod
 
 [horizontal pod auto scaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/#support-for-custom-metrics)
+[Creating a service](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#creating-a-service)
+[Exposing a Service](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#exposing-the-service)
 
 ### Demo
 
