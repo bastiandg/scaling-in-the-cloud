@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hashy
+  name: "$service_name"
   labels:
-    app: hashy
+    app: "$service_name"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hashy
+      app: "$service_name"
   template:
     metadata:
       labels:
-        app: hashy
+        app: "$service_name"
     spec:
       containers:
-      - name: hashy
-        image: gcr.io/mms-bdg-techsummit-d-prim/hashy-image:latest
+      - name: "$service_name"
+        image: "gcr.io/${project_id}/${service_name}-image:latest"
         ports:
         - containerPort: 80
         resources:

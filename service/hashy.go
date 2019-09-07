@@ -7,6 +7,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"log"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -24,5 +25,9 @@ func healthz(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/healthz", healthz)
-	log.Fatal(http.ListenAndServe(":80", nil))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "80"
+	}
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }

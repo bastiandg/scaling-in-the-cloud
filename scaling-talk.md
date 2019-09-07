@@ -7,6 +7,8 @@
 - cost reduction? probably not <!--TODO point still valid? If yes elaborate.-->
 - immutable infrastructure required
 
+Scaling Ladder Illustration <!--TODO-->
+
 ## immutable infrastructure
 
 - Computing infrastructure doesn't change at runtime
@@ -29,6 +31,7 @@
 ## VM based scaling
 
 - Lift and Shift +
+- Paradigm shift: Every infrastructure component is immutable
 - Make infrastructure immutable
 - Persist data outside VM
 - Packer
@@ -40,6 +43,7 @@
 
 ## k8s
 
+- Paradigm shift: There are no VMs <!--- TODO -->
 - Pool of resources
 - services containerized
 - Scaling unit: pod
@@ -57,9 +61,13 @@
 
 ## serverless
 
+- Paradigm shift: There is no infrastructure <!--- TODO -->
 - cloudfunctions
 - Knative
 - cloud run
+
+[Example deployment](https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy)
+[Pricing](https://cloud.google.com/run/pricing)
 
 ### Demo
 
