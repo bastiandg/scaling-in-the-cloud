@@ -12,6 +12,7 @@
     - "Service Account User" (roles/iam.serviceAccountUser) - for using the compute and k8s service accounts
     - "Cloud Build Editor" (roles/cloudbuild.builds.editor) - for starting cloud builds
     - "Storage Admin" (roles/storage.admin) - for creating a bucket the cloud build needs
+    - "Cloud Run Admin" (roles/run.admin) - for deploying to cloud run
 - create credentials file for the account
 - customize and load the variables
     ```sh
@@ -44,12 +45,18 @@ After around 30 - 60 seconds the scaling will set in.
 
 ## Kubernetes
 
-### deploy kubernetes cluster
+### build image
 
 ```sh
 cd k8s/
 # Create a docker image of the service
 gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yaml --substitutions "_SERVICE_NAME=$service_name" --async
+```
+
+### deploy kubernetes cluster
+
+```sh
+cd k8s/
 # Set up the terraform cluster
 terraform init
 terraform plan
@@ -83,4 +90,8 @@ watch kubectl get nodes # this has to be opened in another window
 gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yaml --substitutions "_SERVICE_NAME=$service_name" --async
 ```
 
-https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+### Deployment
+
+```sh
+gcloud beta run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
+```

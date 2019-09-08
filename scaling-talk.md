@@ -1,13 +1,17 @@
 # Scaling talk draft
 
+- not just a talk, also demo at [bastiandg/scaling-in-the-cloud](https://github.com/bastiandg/scaling-in-the-cloud/)
+
 ## Scaling in the cloud
 
 - cloud is not about cost, it is about scaling
 - side effect: acceleration
 - cost reduction? probably not <!--TODO point still valid? If yes elaborate.-->
 - immutable infrastructure required
+- Everything talks via http
 
 Scaling Ladder Illustration <!--TODO-->
+[draw.io for gcp](https://www.draw.io/?libs=gcp2)
 
 ## immutable infrastructure
 
@@ -62,12 +66,17 @@ Scaling Ladder Illustration <!--TODO-->
 ## serverless
 
 - Paradigm shift: There is no infrastructure <!--- TODO -->
+- No infrastructure management
+- Pay per use
+- stateless
 - cloudfunctions
 - Knative
 - cloud run
 
 [Example deployment](https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy)
 [Pricing](https://cloud.google.com/run/pricing)
+[Knative](https://knative.dev/)
+[Cloud Run Introduction](https://www.youtube.com/watch?v=xVuuvZkYiNM)
 
 ### Demo
 
