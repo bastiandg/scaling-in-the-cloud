@@ -95,3 +95,19 @@ gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yam
 ```sh
 gcloud beta run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
 ```
+
+## Links
+
+- [draw.io for gcp](https://www.draw.io/?libs=gcp2)
+- [The Lift-and-Shift Fallacy](https://www.contino.io/insights/the-lift-and-shift-fallacy-why-it-will-cost-you-time-money-and-people)
+- [Velostrata](https://cloud.google.com/migrate/compute-engine/)
+- [Packer](https://packer.io/)
+- [managed instance groups](https://cloud.google.com/compute/docs/instance-groups/#managed_instance_groups)
+- [horizontal pod auto scaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/#support-for-custom-metrics)
+- [Creating a service](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#creating-a-service)
+- [Exposing a Service](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#exposing-the-service)
+- [Example deployment](https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy)
+- [Pricing](https://cloud.google.com/run/pricing)
+- [Knative](https://knative.dev/)
+- [Cloud Run Introduction](https://www.youtube.com/watch?v=xVuuvZkYiNM)
+- [marp example](https://raw.githubusercontent.com/yhatt/marp/master/example.md)
