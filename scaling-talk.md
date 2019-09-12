@@ -94,14 +94,57 @@ Scaling Ladder Illustration <!--TODO Colors-->
     - Container image
 - Kubernetes
     - Deployment
-    - Service
     - Horizontal Pod Autoscaler
+    - Service
+
+---
+
+# Kubernetes cluster
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/kubernetes-deployment1.png)
 
 ---
 
 # Kubernetes deployment
 
-![width:400px](images/kubernetes-deployment.png) ![width:400px](images/horizontal-pod-autoscaler.svg)
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+
+![height:600px](images/kubernetes-deployment2.png)
+
+---
+
+# Kubernetes pod autoscaler
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/kubernetes-deployment3.png)
+
+---
+
+# Kubernetes service
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/kubernetes-deployment4.png)
 
 ---
 
