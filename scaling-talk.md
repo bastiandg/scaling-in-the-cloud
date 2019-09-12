@@ -1,25 +1,24 @@
-Scaling talk draft
-==================
+Climbing up the scaling ladder
+==============================
+
 
 <!-- $size: 16:9 -->
 
-- not just a talk, also demo at [bastiandg/scaling-in-the-cloud](https://github.com/bastiandg/scaling-in-the-cloud/)
 
 ---
 
 # Scaling in the cloud
 
+- 3 Scaling scenarios
+- demos at [github.com/bastiandg/scaling-in-the-cloud](https://github.com/bastiandg/scaling-in-the-cloud/)
 - cloud is not about cost, it is about scaling
-- immutable infrastructure required
-- Everything talks via http
 
 <!--- side effect: acceleration-->
 <!--- cost reduction? probably not [>TODO point still valid? If yes elaborate.<]-->
 
 ---
 
-![bg 30%](images/scaling-ladder.png)
-Scaling Ladder Illustration <!--TODO Colors-->
+![bg 30%](images/scaling-ladder.png) <!--TODO Colors-->
 
 ---
 
@@ -36,28 +35,29 @@ Scaling Ladder Illustration <!--TODO Colors-->
 
 <!--- Velostrata-->
 
----
+<!-- # immutable infrastructure-->
 
-# immutable infrastructure
-
-- Computing infrastructure doesn't change at runtime
-- Operating System images are prebuilt
-- Separation of storage and computing
+<!--- Computing infrastructure doesn't change at runtime-->
+<!--- Operating System images are prebuilt-->
+<!--- Separation of storage and computing-->
 
 ---
 
 # Autoscaled Host Groups
 
+![bg height:100% right](images/terracotta-army-cropped.jpg)
 - Lift and Shift +
 - Paradigm shift: VMs are containers
 - Make infrastructure immutable
 - Persist data outside VM
-- vm scaling mechanisms of the cloud (gcp: managed instance group)
+<!--- vm scaling mechanisms of the cloud (gcp: managed instance group)-->
 
 ---
 
-# Recipe Autoscaled Host Groups
+# Ingredients Autoscaled Host Groups
 
+- Managed instance group
+    - VM Autoscaler
 - Packer
     - VM Image
 - Terraform
@@ -70,6 +70,18 @@ Scaling Ladder Illustration <!--TODO Colors-->
 
 ---
 
+# Managed instance group in GCP
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/managed-instance-group.png)
+
+---
+
 # Demo Autoscaled Host Groups
 
 ![bg width:300px right](images/demo.png)
@@ -78,7 +90,7 @@ Scaling Ladder Illustration <!--TODO Colors-->
 
 # kubernetes
 
-![bg height:100% left](images/kubernetes-logo.png)
+![bg height:95% left](images/kubernetes-logo.png)
 - Paradigm shift: There are no VMs <!--- TODO -->
 - Pool of resources
 - services containerized
@@ -88,8 +100,8 @@ Scaling Ladder Illustration <!--TODO Colors-->
 # Ingredients kubernetes
 
 - Terraform
-    - Node Autoscaler
     - Kubernetes Cluster
+    - Node Autoscaler
 - Docker
     - Container image
 - Kubernetes
