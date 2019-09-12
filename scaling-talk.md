@@ -10,7 +10,7 @@ Climbing up the scaling ladder
 # Scaling in the cloud
 
 - 3 Scaling scenarios
-- demos at [github.com/bastiandg/scaling-in-the-cloud](https://github.com/bastiandg/scaling-in-the-cloud/)
+- demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
 - cloud is not about cost, it is about scaling
 
 <!--- side effect: acceleration-->
