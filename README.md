@@ -1,5 +1,8 @@
 # Scaling Talk
 
+- [slides](scaling-talk.pdf)
+- [Image sources](images/README.md)
+
 ## General setup
 
 - install [packer](https://www.packer.io/downloads.html)
