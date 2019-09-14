@@ -88,8 +88,12 @@ section {
 
 ---
 
-# kubernetes
+# Container Orchestration
 
+<!--https://pixabay.com/photos/search/harbor%20container/-->
+<!--https://pixabay.com/photos/hamburg-port-of-hamburg-3021820/-->
+<!--https://pixabay.com/photos/port-ships-cranes-load-containers-675539/-->
+<!--https://pixabay.com/photos/port-ships-cranes-load-containers-614543/-->
 ![bg height:95% left](images/kubernetes-logo.png)
 - Paradigm shift: There are no VMs <!--- TODO -->
 - Pool of resources
@@ -97,7 +101,7 @@ section {
 
 ---
 
-# Ingredients kubernetes
+# Ingredients Container Orchestration
 
 - Terraform
     - Kubernetes Cluster
@@ -167,6 +171,8 @@ section {
 ---
 
 # serverless
+
+<!--https://www.pexels.com/search/balloon/-->
 
 - Paradigm shift: There is no infrastructure <!--- TODO -->
 - No infrastructure management
