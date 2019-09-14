@@ -1,4 +1,4 @@
-Climbing up the scaling ladder
+Climbing up the Scaling Ladder
 ==============================
 
 
@@ -7,26 +7,27 @@ Climbing up the scaling ladder
 
 ---
 
-# Scaling in the cloud
+# Scaling in the Cloud
 
-- 3 Scaling scenarios
-- demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
-- cloud is not about cost, it is about scaling
+- 3 Scaling scenarios (with examples)
+- Demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
+- Cloud is not about cost, it is about scaling
+- Reduced cost is a side effect
 
 <!--- side effect: acceleration-->
 <!--- cost reduction? probably not [>TODO point still valid? If yes elaborate.<]-->
 
 ---
 
-![bg 30%](images/scaling-ladder.png) <!--TODO Colors-->
+![bg 30%](images/scaling-ladder.png)
 
 ---
 
-# Lift and shift
+# Lift and Shift
 
 <!--![bg width:600px left](images/house-cropped.jpg)-->
 ![bg height:100% left](images/house-cropped.jpg)
-- Migrate legacy VMs/Software with (almost) no modification
+- Migrate legacy VMs / Software with (almost) no modification
 - Doesn't scale very well (bigger VMs, faster disks)
 - Your mess for less
 - Conclusion: don't do it
@@ -54,23 +55,26 @@ Climbing up the scaling ladder
 
 ---
 
-# Ingredients Autoscaled Host Groups
+# Example Autoscaled Host Groups
 
-- Managed instance group
-    - VM Autoscaler
-- Packer
-    - VM Image
-- Terraform
-    - VM Template
-    - Managed instance group
-    - Loadbalancer
+<style scoped>
+table, td, th, tr {
+    border: none;
+}
+</style>
+
+| | |
+|:--------:|-------------|
+| ![width:130px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
+| ![width:110px right](images/packer-logo.svg) | - VM Image |
+| ![width:130px right](images/gce-logo.svg) | - VM Autoscaler |
 
 <!--- Scaling unit: VM-->
 <!--- Packer-->
 
 ---
 
-# Managed instance group in GCP
+# Managed Instance Group in GCP
 
 <style scoped>
 section {
@@ -82,7 +86,7 @@ section {
 
 ---
 
-# Demo Autoscaled Host Groups
+# Demo Managed Instance Group
 
 ![bg width:300px right](images/demo.png)
 
@@ -94,24 +98,26 @@ section {
 <!--https://pixabay.com/photos/hamburg-port-of-hamburg-3021820/-->
 <!--https://pixabay.com/photos/port-ships-cranes-load-containers-675539/-->
 <!--https://pixabay.com/photos/port-ships-cranes-load-containers-614543/-->
-![bg height:95% left](images/kubernetes-logo.png)
+![bg height:100% left](images/port-cropped.jpg)
 - Paradigm shift: There are no VMs <!--- TODO -->
 - Pool of resources
-- services containerized
+- Services containerized
 
 ---
 
-# Ingredients Container Orchestration
+# Example Container Orchestration
 
-- Terraform
-    - Kubernetes Cluster
-    - Node Autoscaler
-- Docker
-    - Container image
-- Kubernetes
-    - Deployment
-    - Horizontal Pod Autoscaler
-    - Service
+<style scoped>
+table, td, th, tr {
+    border: none;
+}
+</style>
+
+| | |
+|:--------:|-------------|
+| ![width:130px right](images/terraform-logo.svg) | - Kubernetes Cluster <br> - Node Autoscaler|
+| ![width:130px right](images/docker-logo.png) | - Container Image |
+| ![width:130px right](images/kubernetes-logo.png) | - Deployment <br> - Horizontal Pod Autoscaler <br> - Service|
 
 ---
 
@@ -127,7 +133,7 @@ section {
 
 ---
 
-# Kubernetes deployment
+# Kubernetes Deployment
 
 <style scoped>
 section {
@@ -140,7 +146,7 @@ section {
 
 ---
 
-# Kubernetes pod autoscaler
+# Kubernetes Pod Autoscaler
 
 <style scoped>
 section {
@@ -152,7 +158,7 @@ section {
 
 ---
 
-# Kubernetes service
+# Kubernetes Service
 
 <style scoped>
 section {
@@ -164,33 +170,39 @@ section {
 
 ---
 
-# Demo kubernetes
+# Demo Kubernetes
 
 ![bg width:300px right](images/demo.png)
 
 ---
 
-# serverless
+# Serverless
 
-<!--https://www.pexels.com/search/balloon/-->
+![bg height:100% left](images/balloons-cropped.jpg)
 
 - Paradigm shift: There is no infrastructure <!--- TODO -->
 - No infrastructure management
 - Pay per use
-- stateless
+- Stateless
 
 ---
 
-# Ingredients serverless
+<!--border-bottom: 0px solid black;-->
+# Example Serverless
+<style scoped>
+table, td, th, tr {
+    border: none;
+}
+</style>
 
-- Docker
-    - Container Image
-- Cloud Run
-    - Deployment
+| | |
+|----------|-------------|
+| ![width:100px right](images/docker-logo.png) |  Container Image|
+| ![width:100px right](images/cloud-run-logo.svg) |  Deployment |
 
 ---
 
-# Demo serverless
+# Demo Serverless
 
 ![bg width:300px right](images/demo.png)
 
@@ -199,6 +211,6 @@ section {
 # Takeaways
 
 - Don't do lift and shift
-- separate storage from computing
+- Separate storage from computing
 
 <!--- TODO Don't use Docker as a light VM-->
