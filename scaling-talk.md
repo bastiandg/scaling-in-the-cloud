@@ -9,13 +9,13 @@ Climbing up the Scaling Ladder
 
 # Scaling in the Cloud
 
+- Disclaimer: Focus on standard applications (not ML or storage)
 - 3 Scaling scenarios (with examples)
 - Demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
 - Cloud is not about cost, it is about scaling
 - Reduced cost is a side effect
 
 <!--- side effect: acceleration-->
-<!--- cost reduction? probably not [>TODO point still valid? If yes elaborate.<]-->
 
 ---
 
@@ -27,10 +27,11 @@ Climbing up the Scaling Ladder
 
 <!--![bg width:600px left](images/house-cropped.jpg)-->
 ![bg height:100% left](images/house-cropped.jpg)
+
 - Migrate legacy VMs / Software with (almost) no modification
 - Doesn't scale very well (bigger VMs, faster disks)
 - Your mess for less
-- Conclusion: don't do it
+- Conclusion: don't do it (in most cases)
 
 <!--https://pixabay.com/photos/house-uprooted-installation-1614922/-->
 
@@ -47,7 +48,7 @@ Climbing up the Scaling Ladder
 # Autoscaled Host Groups
 
 ![bg height:100% right](images/terracotta-army-cropped.jpg)
-- Lift and Shift +
+- Lift and Shift done right
 - Paradigm shift: VMs are containers
 - Make infrastructure immutable
 - Persist data outside VM
@@ -67,7 +68,7 @@ table, td, th, tr {
 |:--------:|-------------|
 | ![width:130px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
 | ![width:110px right](images/packer-logo.svg) | - VM Image |
-| ![width:130px right](images/gce-logo.svg) | - VM Autoscaler |
+| ![width:130px right](images/gce-logo.svg) | - Managed Instance Group -> VM Autoscaler |
 
 <!--- Scaling unit: VM-->
 <!--- Packer-->

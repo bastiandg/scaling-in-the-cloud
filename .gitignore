@@ -4,3 +4,4 @@ env.sh
 **/.terraform/*
 *.tfstate
 *.tfstate.*
+notes.md
