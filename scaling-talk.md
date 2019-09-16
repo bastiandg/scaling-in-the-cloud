@@ -75,6 +75,7 @@ table, td, th, tr {
 
 ---
 
+
 # Managed Instance Group in GCP
 
 <style scoped>
@@ -84,6 +85,82 @@ section {
 </style>
 
 ![height:600px center](images/managed-instance-group.png)
+
+---
+
+# Demo Managed Instance Group
+
+![bg width:300px right](images/demo.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-target.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-cpu.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-load.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-scale.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-scale2.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-scale3.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/mig-autoscaler-final.png)
 
 ---
 
