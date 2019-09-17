@@ -254,6 +254,76 @@ section {
 
 ---
 
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-target-hpa.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-cpu.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-scale.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-scale2.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-node-scaler.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-node-scaleup.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-final.png)
+
+---
+
 # Serverless
 
 ![bg height:100% left](images/balloons-cropped.jpg)
@@ -289,6 +359,8 @@ table, td, th, tr {
 # Takeaways
 
 - Don't do lift and shift
-- Separate storage from computing
+- Do not ask yourself how to save cost
+- Ask your self how to scale
 
+<!--- Separate storage from computing-->
 <!--- TODO Don't use Docker as a light VM-->
