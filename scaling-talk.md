@@ -4,7 +4,6 @@ Climbing up the Scaling Ladder
 
 <!-- $size: 16:9 -->
 
-
 ---
 
 # Scaling in the Cloud
@@ -66,9 +65,9 @@ table, td, th, tr {
 
 | | |
 |:--------:|-------------|
-| ![width:130px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
 | ![width:110px right](images/packer-logo.svg) | - VM Image |
 | ![width:130px right](images/gce-logo.svg) | - Managed Instance Group -> VM Autoscaler |
+| ![width:130px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
 
 <!--- Scaling unit: VM-->
 <!--- Packer-->
@@ -88,7 +87,17 @@ section {
 
 ---
 
-# Demo Managed Instance Group
+# Example Application
+
+- Hashy
+
+```
+bcrypt( data=time.now(), cost=12 )
+```
+
+---
+
+# Demo Managed Instance Group Part 1
 
 ![bg width:300px right](images/demo.png)
 
@@ -164,7 +173,7 @@ section {
 
 ---
 
-# Demo Managed Instance Group
+# Demo Managed Instance Group Part 2
 
 ![bg width:300px right](images/demo.png)
 
@@ -248,7 +257,7 @@ section {
 
 ---
 
-# Demo Kubernetes
+# Demo Kubernetes Part 1
 
 ![bg width:300px right](images/demo.png)
 
@@ -321,6 +330,12 @@ section {
 </style>
 
 ![height:600px](images/k8s-scaling-final.png)
+
+---
+
+# Demo Kubernetes Part 2
+
+![bg width:300px right](images/demo.png)
 
 ---
 

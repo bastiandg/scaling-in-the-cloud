@@ -18,11 +18,14 @@ spec:
       - name: "$service_name"
         image: "gcr.io/${project_id}/${service_name}-image:latest"
         ports:
-        - containerPort: 80
+        - containerPort: $port
         resources:
           requests:
             memory: "110Mi"
-            cpu: "500m"
+            cpu: "700m"
           limits:
             memory: "128Mi"
-            cpu: "900m"
+            cpu: "950m"
+        env:
+        - name: PORT
+          value: "$port"

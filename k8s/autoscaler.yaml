@@ -9,7 +9,7 @@ spec:
     apiVersion: extensions/v1beta1
     kind: Deployment
     name: "$service_name"
-  targetCPUUtilizationPercentage: 95
+  targetCPUUtilizationPercentage: 60
 status:
   currentReplicas: 0
   desiredReplicas: 0
