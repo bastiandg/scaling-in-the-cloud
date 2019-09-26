@@ -8,7 +8,7 @@ Climbing up the Scaling Ladder
 
 # Scaling in the Cloud
 
-- Disclaimer: Focus on standard applications (not ML or storage)
+- Disclaimer: Focus on standard applications (not Machine Learning or Storage)
 - 3 Scaling scenarios (with examples)
 - Demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
 - Cloud is not about cost, it is about scaling
@@ -359,9 +359,9 @@ table, td, th, tr {
 </style>
 
 | | |
-|----------|-------------|
-| ![width:100px right](images/docker-logo.png) |  Container Image|
-| ![width:100px right](images/cloud-run-logo.svg) |  Deployment |
+|-|-|
+| ![width:100px right](images/docker-logo.png) | Container Image |
+| ![width:100px right](images/cloud-run-logo.svg) | Deployment |
 
 ---
 
@@ -373,9 +373,10 @@ table, td, th, tr {
 
 # Takeaways
 
+![bg height:100% left](images/takeaways-cropped.jpg)
+
 - Don't do lift and shift
-- Do not ask yourself how to save cost
-- Ask your self how to scale
+- Cloud providers make scaling easy
 
 <!--- Separate storage from computing-->
 <!--- TODO Don't use Docker as a light VM-->

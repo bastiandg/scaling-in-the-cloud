@@ -12,6 +12,7 @@
 - [cloud-run-logo.svg (by google)](https://cloud.google.com/icons/)
 - [gce-logo.svg (by google)](https://cloud.google.com/icons/)
 - [port.jpg (by cegoh)](https://pixabay.com/photos/port-ships-cranes-load-containers-614543/)
+- [takeaways.jpg (by josealbafotos)](https://pixabay.com/photos/suitcase-girl-leaving-child-person-1412996/)
 
 - [scaling-ladder.png (self created with drawio)](https://www.draw.io/?libs=gcp2)
 - [kubernetes-deployment.png (self created with drawio)](https://www.draw.io/?libs=gcp2)
