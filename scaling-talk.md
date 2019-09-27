@@ -311,6 +311,7 @@ section {
 
 ![height:600px](images/k8s-scaling-node-scaler.png)
 
+
 ---
 
 <style scoped>
@@ -319,7 +320,17 @@ section {
 }
 </style>
 
-![height:600px](images/k8s-scaling-node-scaleup.png)
+![height:600px](images/k8s-scaling-node-scale1.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px](images/k8s-scaling-node-scale2.png)
 
 ---
 
