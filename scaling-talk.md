@@ -6,15 +6,67 @@ Climbing up the Scaling Ladder
 
 ---
 
-# Scaling in the Cloud
+# Problem Statement
 
-- Disclaimer: Focus on standard applications (not Machine Learning or Storage)
-- 3 Scaling scenarios (with examples)
-- Demos at [scale.8c.at](https://github.com/bastiandg/scaling-in-the-cloud/) ⚖️8️🐱
-- Cloud is not about cost, it is about scaling
-- Reduced cost is a side effect
+<style scoped>
+section {
+  font-size: 60px;
+}
+</style>
+
+With inappropriate scaling you are losing customers 🏃 and money 💸.
 
 <!--- side effect: acceleration-->
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/Context1.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/Context2.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/Context3.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/Context4.png)
+
+---
+
+<style scoped>
+section {
+    text-align: center;
+}
+</style>
+
+![height:600px center](images/Context5.png)
 
 ---
 
@@ -66,8 +118,8 @@ table, td, th, tr {
 | | |
 |:--------:|-------------|
 | ![width:110px right](images/packer-logo.svg) | - VM Image |
-| ![width:130px right](images/gce-logo.svg) | - Managed Instance Group -> VM Autoscaler |
-| ![width:130px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
+| ![width:110px right](images/gce-logo.svg) | - Managed Instance Group -> VM Autoscaler |
+| ![width:110px right](images/terraform-logo.svg) | - VM Template <br> - Managed instance group <br> - Loadbalancer|
 
 <!--- Scaling unit: VM-->
 <!--- Packer-->
