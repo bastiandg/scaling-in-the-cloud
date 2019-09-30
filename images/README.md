@@ -13,6 +13,7 @@
 - [gce-logo.svg (by google)](https://cloud.google.com/icons/)
 - [port.jpg (by cegoh)](https://pixabay.com/photos/port-ships-cranes-load-containers-614543/)
 - [takeaways.jpg (by josealbafotos)](https://pixabay.com/photos/suitcase-girl-leaving-child-person-1412996/)
+- [ladder.jpg (by Seymour Johnson Air Force Base)](https://www.seymourjohnson.af.mil/News/Article-Display/Article/662765/climbing-high/) - [The appearance of U.S. Department of Defense (DoD) visual information does not imply or constitute DoD endorsement.](https://www.dimoc.mil/resources/limitations/)
 
 - [scaling-ladder.png (self created with drawio)](https://www.draw.io/?libs=gcp2)
 - [kubernetes-deployment.png (self created with drawio)](https://www.draw.io/?libs=gcp2)

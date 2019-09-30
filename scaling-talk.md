@@ -1,6 +1,8 @@
 Climbing up the Scaling Ladder
 ==============================
 
+![bg height:100% left](images/ladder-cropped.jpg)
+<!--Alternative background https://www.flickr.com/photos/127932966@N07/15178278179/-->
 
 <!-- $size: 16:9 -->
 
