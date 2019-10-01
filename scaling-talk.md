@@ -102,9 +102,13 @@ section {
 
 ![bg height:100% right](images/terracotta-army-cropped.jpg)
 - Lift and Shift done right
-- Paradigm shift: VMs are containers
-- Make infrastructure immutable
-- Persist data outside VM
+
+Three Step process:
+1. Persist data outside VM
+2. Automate VM setup
+3. Create VM image
+
+<!--- Make infrastructure immutable-->
 <!--- vm scaling mechanisms of the cloud (gcp: managed instance group)-->
 
 ---
@@ -146,7 +150,7 @@ section {
 - Hashy
 
 ```
-bcrypt( data=time.now(), cost=12 )
+bcrypt( time.now() )
 ```
 
 ---
@@ -235,6 +239,12 @@ section {
 
 # Container Orchestration
 
+<style scoped>
+section {
+    padding: 40px;
+}
+</style>
+
 <!--https://pixabay.com/photos/search/harbor%20container/-->
 <!--https://pixabay.com/photos/hamburg-port-of-hamburg-3021820/-->
 <!--https://pixabay.com/photos/port-ships-cranes-load-containers-675539/-->
@@ -243,6 +253,8 @@ section {
 - Paradigm shift: There are no VMs <!--- TODO -->
 - Pool of resources
 - Services containerized
+    -> strip out OS
+    -> runtime image instead VM image
 
 ---
 
@@ -262,7 +274,7 @@ table, td, th, tr {
 
 ---
 
-# Kubernetes cluster
+# Kubernetes Cluster
 
 <style scoped>
 section {
@@ -270,7 +282,7 @@ section {
 }
 </style>
 
-![height:600px center](images/kubernetes-deployment1.png)
+![height:600px center](images/kubernetes-deployment-start.png)
 
 ---
 
@@ -283,7 +295,7 @@ section {
 </style>
 
 
-![height:600px](images/kubernetes-deployment2.png)
+![height:600px](images/kubernetes-deployment-deployment.png)
 
 ---
 
@@ -295,7 +307,7 @@ section {
 }
 </style>
 
-![height:600px](images/kubernetes-deployment3.png)
+![height:600px](images/kubernetes-deployment-hpa.png)
 
 ---
 
@@ -307,7 +319,7 @@ section {
 }
 </style>
 
-![height:600px](images/kubernetes-deployment4.png)
+![height:600px](images/kubernetes-deployment-final.png)
 
 ---
 
@@ -364,7 +376,6 @@ section {
 </style>
 
 ![height:600px](images/k8s-scaling-node-scaler.png)
-
 
 ---
 
@@ -440,8 +451,9 @@ table, td, th, tr {
 
 ![bg height:100% left](images/takeaways-cropped.jpg)
 
-- Don't do lift and shift
+- Scalability is a fundamental requirement
 - Cloud providers make scaling easy
+- Don't do lift and shift
 
 <!--- Separate storage from computing-->
 <!--- TODO Don't use Docker as a light VM-->

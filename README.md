@@ -8,7 +8,7 @@
 - install [packer](https://www.packer.io/downloads.html)
 - install [terraform](https://www.terraform.io/downloads.html)
 - install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- install a benchmarking tool / load generator (the examples use [`wrk`](https://github.com/wg/wrk))
+- install a benchmarking tool / load generator (the examples use [`hey`](https://github.com/rakyll/hey))
 - create service account
 - assign roles:
     - "Compute Admin" (roles/compute.admin) - for creating VM instances, disks, images and load balancers
@@ -41,7 +41,7 @@ sleep 300               # Wait for the Instances and the load balancer to be up
 
 ```sh
 export service_ip="$(terraform output vm_lb_ip_address)"
-wrk --duration 120 --connections 10 --timeout 5s --latency "http://$service_ip/"
+hey -q 20 -c 20 -n 2000 "http://$service_ip/"
 ```
 
 After around 30 - 60 seconds the scaling will set in.
@@ -83,7 +83,7 @@ envsubst < autoscaler.yaml | kubectl apply -f - # create an auto scaling object
 ```sh
 kubectl get services
 export service_ip="$(kubectl get services "$service_name" -o jsonpath='{.status.loadBalancer.ingress[0].ip}')"
-wrk --duration 120 --connections 20 --timeout 5s --latency "http://$service_ip/"
+hey -q 20 -c 20 -n 2000 "http://$service_ip/"
 watch kubectl get nodes # this has to be opened in another window
 ```
 
@@ -97,6 +97,13 @@ gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yam
 
 ```sh
 gcloud beta run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
+```
+
+### Scaling test
+
+```sh
+export RUN_URL="$(gcloud beta run services list --format='value(status.url)' --platform managed)"
+bash hey.sh
 ```
 
 ## Links
