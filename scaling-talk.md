@@ -455,5 +455,12 @@ table, td, th, tr {
 - Cloud providers make scaling easy
 - Don't do lift and shift
 
+---
+
+# Thanks for listening
+
+- Feedback is very much appreciated
+- Demos can be found at scale.8c.at ⚖️8️🐱
+
 <!--- Separate storage from computing-->
 <!--- TODO Don't use Docker as a light VM-->
