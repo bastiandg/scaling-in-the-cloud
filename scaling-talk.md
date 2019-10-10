@@ -12,7 +12,7 @@ Climbing up the Scaling Ladder
 
 <style scoped>
 section {
-  font-size: 60px;
+  font-size: 50px;
 }
 </style>
 
@@ -69,6 +69,12 @@ section {
 </style>
 
 ![height:600px center](images/Context5.png)
+
+---
+
+# Scaling in the Cloud
+
+![bg height:100% left](images/rocket-cropped.jpg)
 
 ---
 
