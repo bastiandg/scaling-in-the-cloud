@@ -8,6 +8,16 @@ Climbing up the Scaling Ladder
 
 ---
 
+# About me
+
+![bg height:100% right](images/about-me.png)
+
+- I'm Bastian
+- Enthuthiast about auto scaling and automation
+- Part of the Cloud Foundation team
+
+---
+
 # Problem Statement
 
 <style scoped>
@@ -16,7 +26,9 @@ section {
 }
 </style>
 
-With inappropriate scaling you are losing customers 🏃 and money 💸.
+With inappropriate scaling you are losing
+- customers 🏃
+- and money 💸
 
 <!--- side effect: acceleration-->
 
@@ -87,20 +99,10 @@ section {
 <!--![bg width:600px left](images/house-cropped.jpg)-->
 ![bg height:100% left](images/house-cropped.jpg)
 
-- Migrate legacy VMs / Software with (almost) no modification
-- Doesn't scale very well (bigger VMs, faster disks)
+- Migrate legacy VMs with no modification
+- Doesn't scale very well
 - Your mess for less
-- Conclusion: don't do it (in most cases)
-
-<!--https://pixabay.com/photos/house-uprooted-installation-1614922/-->
-
-<!--- Velostrata-->
-
-<!-- # immutable infrastructure-->
-
-<!--- Computing infrastructure doesn't change at runtime-->
-<!--- Operating System images are prebuilt-->
-<!--- Separation of storage and computing-->
+- Conclusion: don't do it
 
 ---
 
@@ -274,9 +276,9 @@ table, td, th, tr {
 
 | | |
 |:--------:|-------------|
-| ![width:130px right](images/terraform-logo.svg) | - Kubernetes Cluster <br> - Node Autoscaler|
 | ![width:130px right](images/docker-logo.png) | - Container Image |
 | ![width:130px right](images/kubernetes-logo.png) | - Deployment <br> - Horizontal Pod Autoscaler <br> - Service|
+| ![width:130px right](images/terraform-logo.svg) | - Kubernetes Cluster <br> - Node Autoscaler|
 
 ---
 
@@ -465,8 +467,8 @@ table, td, th, tr {
 
 # Thanks for listening
 
-- Feedback is very much appreciated
 - Demos can be found at scale.8c.at ⚖️8️🐱
+- Questions?
 
 <!--- Separate storage from computing-->
 <!--- TODO Don't use Docker as a light VM-->
