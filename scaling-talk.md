@@ -10,11 +10,11 @@ Climbing up the Scaling Ladder
 
 # About me
 
-![bg height:100% right](images/about-me.png)
+![bg height:100% right](images/whoami.png)
 
 - I'm Bastian
-- Enthuthiast about auto scaling and automation
 - Part of the Cloud Foundation team
+- Enthuthiast about auto scaling and automation
 
 ---
 
