@@ -1,5 +1,5 @@
 provider "google" {
-  version = "~> 2.12"
+  version = "~> 3.12"
   project = var.project
 }
 
@@ -32,9 +32,12 @@ resource "google_compute_instance_template" "appserver_template" {
 
 resource "google_compute_region_instance_group_manager" "appserver" {
   name               = "${var.service_name}-mig"
-  base_instance_name = "${var.service_name}"
-  instance_template  = "${google_compute_instance_template.appserver_template.self_link}"
+  base_instance_name = var.service_name
   region             = var.region
+
+  version {
+    instance_template = google_compute_instance_template.appserver_template.self_link
+  }
 
   named_port {
     name = "http"
