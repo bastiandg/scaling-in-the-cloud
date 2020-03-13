@@ -16,6 +16,10 @@
     - "Cloud Build Editor" (roles/cloudbuild.builds.editor) - for starting cloud builds
     - "Storage Admin" (roles/storage.admin) - for creating a bucket the cloud build needs
     - "Cloud Run Admin" (roles/run.admin) - for deploying to cloud run
+- Enable the APIs:
+    - "Compute Engine Api" (compute.googleapis.com)
+    - "Cloud Run API" (run.googleapis.com)
+    - "Kubernetes Engine API" (container.googleapis.com)
 - create credentials file for the account
 - customize and load the variables
     ```sh
