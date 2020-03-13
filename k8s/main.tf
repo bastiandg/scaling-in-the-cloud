@@ -24,7 +24,7 @@ resource "google_container_cluster" "cluster" {
 resource "google_container_node_pool" "scaling_pool" {
   name     = "${var.service_name}-pool"
   location = var.k8s_location
-  cluster  = "${google_container_cluster.cluster.name}"
+  cluster  = google_container_cluster.cluster.name
 
   initial_node_count = var.min_node_count
 
