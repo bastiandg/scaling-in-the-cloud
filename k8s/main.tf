@@ -19,6 +19,14 @@ resource "google_container_cluster" "cluster" {
       issue_client_certificate = false
     }
   }
+
+  ip_allocation_policy {}
+
+  private_cluster_config {
+    enable_private_nodes    = true
+    enable_private_endpoint = false
+    master_ipv4_cidr_block  = "172.16.0.32/28"
+  }
 }
 
 resource "google_container_node_pool" "scaling_pool" {
