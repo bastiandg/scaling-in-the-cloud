@@ -8,6 +8,7 @@
 - install [packer](https://www.packer.io/downloads.html)
 - install [terraform](https://www.terraform.io/downloads.html)
 - install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- install [gcloud](https://cloud.google.com/sdk/install)
 - install a benchmarking tool / load generator (the examples use [`hey`](https://github.com/rakyll/hey))
 - create service account
 - assign roles:
@@ -16,10 +17,12 @@
     - "Cloud Build Editor" (roles/cloudbuild.builds.editor) - for starting cloud builds
     - "Storage Admin" (roles/storage.admin) - for creating a bucket the cloud build needs
     - "Cloud Run Admin" (roles/run.admin) - for deploying to cloud run
+    - "Kubernetes Engine Admin" (roles/container.admin) - for deploying kubernetes clusters
 - Enable the APIs:
     - "Compute Engine Api" (compute.googleapis.com)
     - "Cloud Run API" (run.googleapis.com)
     - "Kubernetes Engine API" (container.googleapis.com)
+    - "Cloud Build API" (cloudbuild.googleapis.com)
 - create credentials file for the account
 - customize and load the variables
     ```sh
@@ -91,6 +94,8 @@ hey -q 20 -c 20 -n 2000 "http://$service_ip/"
 watch kubectl get nodes # this has to be opened in another window
 ```
 
+## Cloud Run
+
 ### Build image
 
 ```sh
@@ -100,13 +105,13 @@ gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yam
 ### Deployment
 
 ```sh
-gcloud beta run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
+gcloud run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
 ```
 
 ### Scaling test
 
 ```sh
-export RUN_URL="$(gcloud beta run services list --format='value(status.url)' --platform managed)"
+export RUN_URL="$(gcloud run services list --format='value(status.url)' --platform managed)"
 bash hey.sh
 ```
 
