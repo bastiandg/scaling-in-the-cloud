@@ -25,5 +25,5 @@ variable "max_node_count" {
 
 variable "min_master_version" {
   type    = string
-  default = "1.13.7-gke.24"
+  default = null
 }
