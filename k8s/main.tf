@@ -10,6 +10,8 @@ resource "google_container_cluster" "cluster" {
   remove_default_node_pool = true
   initial_node_count       = 1
   min_master_version       = var.min_master_version
+  monitoring_service       = "none"
+  logging_service          = "none"
 
   master_auth {
     username = ""
