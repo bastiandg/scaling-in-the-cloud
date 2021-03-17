@@ -23,7 +23,7 @@
     - "Cloud Run API" (run.googleapis.com)
     - "Kubernetes Engine API" (container.googleapis.com)
     - "Cloud Build API" (cloudbuild.googleapis.com)
-- create credentials file for the account
+- create and download credentials file for the account
 - customize and load the variables
     ```sh
     cp env.sh.example env.sh
@@ -105,13 +105,13 @@ gcloud builds submit ../service/ --project "$project_id" --config cloudbuild.yam
 ### Deployment
 
 ```sh
-gcloud run deploy hashy --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
+gcloud run deploy hashy --concurrency=1 --allow-unauthenticated --image="gcr.io/${project_id}/${service_name}-image" --platform managed --region europe-west1
 ```
 
 ### Scaling test
 
 ```sh
-export RUN_URL="$(gcloud run services list --format='value(status.url)' --platform managed)"
+export RUN_URL="$(gcloud run services describe "$service_name" --region "$cloud_run_region" --format='value(status.url)' --platform managed)"
 bash hey.sh
 ```
 
